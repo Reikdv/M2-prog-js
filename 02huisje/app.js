@@ -36,7 +36,7 @@ class App {
         g.fill();
 
         
-        g.fillStyle = "pink";
+        g.fillStyle = "brown  ";
         g.fillRect(120, 160, 30, 60);
 
         
