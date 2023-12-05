@@ -23,11 +23,11 @@ class App {
 
     huisje (g) {
         
-        g.fillStyle = "yellow";
+        g.fillStyle = "purple";
         g.fillRect(75, 100, 150, 120);
 
         
-        g.fillStyle = "brown";
+        g.fillStyle = "orange";
         g.beginPath();
         g.moveTo(75, 100);
         g.lineTo(150, 20);
@@ -36,11 +36,11 @@ class App {
         g.fill();
 
         
-        g.fillStyle = "brown";
+        g.fillStyle = "pink";
         g.fillRect(120, 160, 30, 60);
 
         
-        g.fillStyle = "blue";
+        g.fillStyle = "yellow";
         g.fillRect(90, 120, 30, 30);
         g.fillRect(180, 120, 30, 30);
     }
