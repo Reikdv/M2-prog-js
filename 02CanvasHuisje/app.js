@@ -12,6 +12,10 @@ class App
     let g = canvas.getContext("2d");
 
     g.fillRect(0, 0, 10, 10);
+    g.fillStyle = "purple";
+    g.fillRect(0,0,canvas.width,canvas.height);
+        
+
 }
 }
 
