@@ -1,51 +1,71 @@
 class App {
     runApplication() {
         console.log("hello world!");
-
-       
+    
         let canvas = document.getElementById("canvasId");
         console.log(canvas);
-
-        
+    
         let g = canvas.getContext("2d");
-
-        
-        g.fillStyle = "skyblue";
-        g.fillRect(0, 0, canvas.width, canvas.height);
-
-        
-        g.fillStyle = "green";
-        g.fillRect(0, 200, canvas.width, 100);
-
-        
-        this.huisje(g);
+    
+        this.drawHouse(g);
     }
-
-    huisje (g) {
-        
-        g.fillStyle = "purple";
-        g.fillRect(75, 100, 150, 120);
-
-        
-        g.fillStyle = "orange";
-        g.beginPath();
-        g.moveTo(75, 100);
-        g.lineTo(150, 20);
-        g.lineTo(225, 100);
-        g.closePath();
-        g.fill();
-
-        
-        g.fillStyle = "brown  ";
-        g.fillRect(120, 160, 30, 60);
-
-        
-        g.fillStyle = "yellow";
-        g.fillRect(90, 120, 30, 30);
-        g.fillRect(180, 120, 30, 30);
+    
+    drawHouse(g) {
+    
+            g.beginPath();
+            g.fillStyle = "purple";
+            g.moveTo(30, 10);
+            g.lineTo(30, 10);
+            g.lineTo(70, 20);
+            g.lineTo(60, 40);
+            g.lineTo(20, 30);
+            g.closePath();
+            g.stroke();
+            g.fill();
+    
+            g.beginPath();
+            g.fillStyle = "red";
+            g.moveTo(70, 20);
+            g.lineTo(70, 20);
+            g.lineTo(80, 30);
+            g.lineTo(60, 40);
+            g.closePath();
+            g.stroke();
+            g.fill();
+    
+            g.beginPath();
+            g.fillStyle = "blue";
+            g.moveTo(80, 30);
+            g.lineTo(80, 30);
+            g.lineTo(80, 50);
+            g.lineTo(60, 60);
+            g.lineTo(60, 40);
+            g.closePath();
+            g.stroke();
+            g.fill();
+    
+            g.beginPath();
+            g.fillStyle = "yellow";
+            g.moveTo(60, 40);
+            g.lineTo(60, 40);
+            g.lineTo(60, 60);
+            g.lineTo(20, 50);
+            g.lineTo(20, 30);
+            g.closePath();
+            g.stroke();
+            g.fill();
+    
+            g.beginPath();
+            g.fillStyle = "purple";
+            g.moveTo(50, 40);
+            g.lineTo(50, 50);
+            g.lineTo(30, 45);
+            g.lineTo(30, 35);
+            g.closePath();
+            g.stroke();
+            g.fill();
+        }
     }
-}
-
-
-let app = new App();
-app.runApplication();
+    
+    let app = new App();
+    app.runApplication();
